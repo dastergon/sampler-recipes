@@ -1,5 +1,5 @@
 runcharts:
-  - title: Google Cloud Platform Regions Median Latency
+  - title: Google Cloud Platform - Regions Median Latency
     rate-ms: 5000       # sampling rate, default = 1000
     scale: 2            # number of digits after sample decimal point, default = 1
     legend:
