@@ -1,0 +1,14 @@
+runcharts:
+  - title: Google Cloud Platform Regions Median Latency
+    rate-ms: 5000       # sampling rate, default = 1000
+    scale: 2            # number of digits after sample decimal point, default = 1
+    legend:
+      enabled: true     # enables item labels, default = true
+      details: false    # enables item statistics: cur/min/max/dlt values, default = true
+    items:
+      - label: us-east1
+        sample: gcping -r us-east1 | awk -F ' ' '{print $3}' | awk -F'[^0-9.]*' '{print $1}'
+      - label: europe-west1
+        sample: gcping -r europe-west1 | awk -F ' ' '{print $3}' | awk -F'[^0-9.]*' '{print $1}'
+      - label: asia-east1
+        sample: gcping -r asia-east1 | awk -F ' ' '{print $3}' | awk -F'[^0-9.]*' '{print $1}'
