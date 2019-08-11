@@ -6,3 +6,7 @@ A list of personal [sampler](https://github.com/sqshq/sampler) recipes to run on
 
 ## Recipes
 - [Google Cloud Platform - Regions Median Latency](gcping.yml)
+
+## Usage
+
+    sampler -c <recipe>.yml
